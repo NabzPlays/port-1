@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>VirtuEats - Recipes</title>
+</head>
+<body style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+  <!--Navigation bar-->
+  <nav class=" mb-3 navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">VirtuEats</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./recipes.html">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <section>
+    <h1 class="text-center">Equipment List</h1>
+
+    <div class="container-fluid mb-3">
+      <ul class="list-group">
+        <li class="list-group-item">Large pot</li>
+        <li class="list-group-item">Frying pan</li>
+        <li class="list-group-item">Mixing bowl</li>
+        <li class="list-group-item">Tongs</li>
+        <li class="list-group-item">Knife and cutting board</li>
+        <li class="list-group-item">Wooden</li>
+        <li class="list-group-item">Rolling pin</li>
+        <li class="list-group-item">Cannoli molds/tube</li>
+        <li class="list-group-item">Baking tray</li>
+      </ul>
+    </div>
+  </section>
+
+  <div>
+    <h1 class="text-center mb-4"><em>Italian Recipes</em></h1>
+    <p class="text-center">Explore our collection of authentic Italian recipes, from classic pasta dishes to delectable desserts.</p>
+  </div>
+
+  <!--Card layout for the recipes-->
+  <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto" id="recipes">
+    <div class="col">
+      <div class="card text-bg-dark mb-3">
+        <img src="../assets/images/sicilian-cannoli.png" class="card-img-top" alt="Sisilian Cannoli on a plate">
+        <div class="card-body">
+          <h5 class="card-title" id="recipe">Sicilian Cannoli</h5>
+          <p class="card-text">A lighter, baked version of the famous Sicilian cannoli, keeping the crispy texture without deep-frying. The ricotta filling is flavored with orange zest, vanilla, and chocolate chips.</p>
+          <div class="card-header" id="serving-size">
+            Serving Size - 10
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item text-bg-dark">Preperation Time - 30 minutes (Plus 1 hour of chilling)</li>
+            <li class="list-group-item text-bg-dark">Cooking Time - 25 minutes</li>
+            <li class="list-group-item text-bg-dark">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sicilian-cannoli-ingredients">
+                Ingredients
+              </button>
+
+              <!--Modal for the ingredients which opens up when users presses on the button which corresponds to the target id-->
+              <div class="modal fade" id="sicilian-cannoli-ingredients" tabindex="-1" aria-labelledby="scrollableModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Ingredient List</h1>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="list-group list-group-numbered" id="ingredient-list">
+                        <li class="list-group-item" id="ingredient">250g all-purpose flour</li>
+                        <li class="list-group-item" id="ingredient">30g sugar</li>
+                        <li class="list-group-item" id="ingredient">30g butter</li>
+                        <li class="list-group-item" id="ingredient">1 egg</li>
+                        <li class="list-group-item" id="ingredient">60ml orange juice</li>
+                        <li class="list-group-item" id="ingredient">1 pinch salt</li>
+                        <li class="list-group-item" id="ingredient">1 egg white</li>
+                        <li class="list-group-item" id="ingredient">500g ricotta cheese</li>
+                        <li class="list-group-item" id="ingredient">100g powdered sugar</li>
+                        <li class="list-group-item" id="ingredient">1 tsp vanilla extract</li>
+                        <li class="list-group-item" id="ingredient">50g chocolate chips</li>
+                        <li class="list-group-item" id="ingredient">1 tbsp lemon zest</li>
+                      </ul>
+                    </div>
+
+                    <!--Close the modal-->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item text-bg-dark">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sicilian-cannoli-steps">
+                Step by step instructions
+              </button>
+
+              <!--Modal for the cooking instructions which opens up when users presses on the button which corresponds to the target id-->
+              <div class="modal fade" id="sicilian-cannoli-steps" tabindex="-1" aria-labelledby="scrollableModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="Modal1CookingLabel">How to cook it!</h1>
+                    </div>
+                    <div class="modal-body">
+                      <ol class="list-group list-group-numbered" id="instructions">
+                        <li class="list-group-item" id="cooking-step">Mix flour, sugar, butter, egg, and milk (or orange juice) into a dough. Knead for 5 minutes, then chill for 1 hour.</li>
+                        <li class="list-group-item" id="cooking-step">Roll & Cut: Roll out the dough thinly. Cut into circles, wrap around cannoli molds, and seal edges with egg white.</li>
+                        <li class="list-group-item" id="cooking-step">Preheat the oven to 180°C/350°F.</li>
+                        <li class="list-group-item" id="cooking-step">Bake for 15-20 minutes until golden brown. Let them cool before removing from molds.</li>
+                        <li class="list-group-item" id="cooking-step">Mix ricotta, sugar, vanilla, orange zest, and chocolate chips.</li>
+                        <li class="list-group-item" id="cooking-step">Fill a piping bag</li>
+                        <li class="list-group-item" id="cooking-step">Pipe the ricotta mixture into the cooled shells. Dust with powdered sugar before serving.</li>
+                      </ol>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card text-bg-dark mb-3">
+        <img src="../assets/images/chicken-corbana-pasta.png" class="card-img-top" alt="Chicken Corbana Pasta on plate">
+        <div class="card-body">
+          <h5 class="card-title" id="recipe">Chicken Corbana Pasta</h5>
+          <p class="card-text">A creamy and delicious version of the Roman classic, replacing guanciale with chicken. The result? A rich and flavorful dish that stays true to the original.</p>
+          <div class="card-header" id="serving-size">
+            Serving Size - 4
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item text-bg-dark">Preperation Time - 10 minutes</li>
+            <li class="list-group-item text-bg-dark">Cooking Time - 15 minutes</li>
+            <li class="list-group-item text-bg-dark">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pasta-ingredients">
+                Ingredients
+              </button>
+
+              <div class="modal fade" id="pasta-ingredients" tabindex="-1" aria-labelledby="scrollableModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Ingredient List</h1>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="list-group list-group-numbered" id="ingredient-list">
+                        <li class="list-group-item" id="ingredient">400g spaghetti</li>
+                        <li class="list-group-item" id="ingredient">150g seasoned chicken breast</li>
+                        <li class="list-group-item" id="ingredient">3 large eggs and 1 extra yolk</li>
+                        <li class="list-group-item" id="ingredient">100g Parmesan or Pecorino Romano cheese, grated</li>
+                        <li class="list-group-item" id="ingredient">1 pinch salt</li>
+                        <li class="list-group-item" id="ingredient">1 tbsp olive oil</li>
+                        <li class="list-group-item" id="ingredient">Freshly ground black pepper</li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item text-bg-dark">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pasta-steps">
+                  Step by step instructions
+                </button>
+
+                <div class="modal fade" id="pasta-steps" tabindex="-1" aria-labelledby="scrollableModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">How to cook it!</h1>
+                      </div>
+                      <div class="modal-body">
+                        <ol class="list-group list-group-numbered" id="instructions">
+                          <li class="list-group-item" id="cooking-step">Boil Pasta: Cook spaghetti in salted boiling water. Reserve 1 cup of pasta water before draining.</li>
+                          <li class="list-group-item" id="cooking-step">Cook Turkey Chicken: In a frying pan, heat olive oil and cook turkey bacon (or diced chicken) until crispy. Remove from heat.</li>
+                          <li class="list-group-item" id="cooking-step">Make the Sauce: In a bowl, whisk eggs, extra yolk, grated Parmesan, and black pepper.</li>
+                          <li class="list-group-item" id="cooking-step">Combine: Add the hot drained pasta into the pan with the turkey bacon. Quickly mix in the egg mixture, stirring fast to create a creamy sauce (use reserved pasta water if needed).</li>
+                          <li class="list-group-item" id="cooking-step">Serve: Plate immediately with extra Parmesan and black pepper.</li>
+                        </ol>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-dark mb-3">
+          <img src="../assets/images/osso-buco.png" class="card-img-top" alt="Osso Bucco beef with rice on plate">
+          <div class="card-body">
+            <h5 class="card-title" id="recipe">Osso Buco</h5>
+            <p class="card-text">A legendary dish from Lombard, slow-braised in a flavorful tomato and vegetable sauce. Served with a traditional saffron-infused risotto for a luxurious touch.</p>
+            <div class="card-header" id="serving-size">
+              Serving Size - 4
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-bg-dark">Preperation Time - 20 minutes</li>
+              <li class="list-group-item text-bg-dark">Cooking Time - 2.5 hours</li>
+              <li class="list-group-item text-bg-dark">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#osso-buco-ingredients">
+                  Ingredients
+                </button>
+
+                <div class="modal fade" id="osso-buco-ingredients" tabindex="-1" aria-labelledby="scrollableModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingredient List</h1>
+                      </div>
+                      <div class="modal-body">
+                      <ul class="list-group list-group-numbered" id="ingredient-list">
+                        <li class="list-group-item" id="ingredient">4 beef shanks (bone-in, about 2 inches thick)</li>
+                        <li class="list-group-item" id="ingredient">1 onion, diced</li>
+                        <li class="list-group-item" id="ingredient">2 carrots, diced</li>
+                        <li class="list-group-item" id="ingredient">2 celery stalks, diced</li>
+                        <li class="list-group-item" id="ingredient">5 garlic cloves, minced</li>
+                        <li class="list-group-item" id="ingredient">400g canned tomatoes, crushed</li>
+                        <li class="list-group-item" id="ingredient">500ml beef broth</li>
+                        <li class="list-group-item" id="ingredient">2 tbsp olive oil</li>
+                        <li class="list-group-item" id="ingredient">1 tbsp flour</li>
+                        <li class="list-group-item" id="ingredient">½ tsp saffron (for risotto, optional)</li>
+                        <li class="list-group-item" id="ingredient">Pinch of salt and pepper</li>
+                        <li class="list-group-item" id="ingredient">Zest of 1 lemon</li>
+                        <li class="list-group-item" id="ingredient">2 tbsp fresh parsley, chopped</li>
+                      </ul>
+                    </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                </div>
+              </li>
+              <li class="list-group-item text-bg-dark">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#osso-buco-steps">
+                  Step by step instructions
+                </button>
+
+                <div class="modal fade" id="osso-buco-steps" tabindex="-1" aria-labelledby="scrollableModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">How to cook it!</h1>
+                      </div>
+                      <div class="modal-body">
+                        <ul class="list-group list-group-numbered" id="instructions">
+                          <li class="list-group-item" id="cooking-step">Sear the Beef: Season beef shanks with salt, pepper, and flour. Heat olive oil in a pot and sear the meat until golden brown then remove.</li>
+                          <li class="list-group-item" id="cooking-step">In the same pot, cook onions, carrots, celery, and garlic until soft.</li>
+                          <li class="list-group-item" id="cooking-step">Add canned tomatoes and beef broth.</li>
+                          <li class="list-group-item" id="cooking-step">Return beef to the pot, cover, and simmer on low heat for 2 hours (or bake at 170°C).</li>
+                          <li class="list-group-item" id="cooking-step">Mix lemon zest, garlic, and parsley. Sprinkle over the dish before serving.</li>
+                          <li class="list-group-item" id="cooking-step">Serve: Traditionally paired with saffron-infused risotto or crusty bread.</li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-white text-center py-3 mt-auto">© 2025 VirtuEats All Rights Reserved.</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
